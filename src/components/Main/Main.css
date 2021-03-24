@@ -1,0 +1,305 @@
+#background{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45vh;
+    background-image: url(../../img/code.png);
+    background-position: center;
+   
+   color: white;
+   font-size: 32pt;
+}
+#background:hover{
+    background-image: url('../../img/Codifier.jpg');
+    transition: 0.6s ease-in-out;
+    
+}
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'rajdhani', sans-serif;
+}
+.apresentation{
+    width: 50px;
+    height: 50px;
+    background-color:#F2D31F; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14pt;
+    cursor: pointer;
+    border-radius: 30px;
+    border: none;
+    
+}
+.apresentation:hover{
+    width: 65px;
+    height: 65px;
+    transition: 0.2s;
+}
+.apresentation a{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.color-bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    background-color: black;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    
+}
+.color-bar h1{
+    animation: fadeIn  0.5s both;
+    animation: fadeInObject 2s both;
+}
+@keyframes fadeInObject{
+    from { background-color: gray}
+    to { background-color: transparent;}
+}
+@keyframes fadeIn{
+    from {opacity: 0};
+    to { opacity: 1};
+
+}
+.card{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    background: black;
+    font-family: 'rajdhani', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    
+    
+    
+}
+.card p{
+    font-weight: 600;
+}
+.card-content{
+    margin-left: 5rem;
+    margin-right: 5rem;
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:row;
+    
+    font-weight: 400;
+    
+    padding: 50px;
+    text-align:justify;
+
+    
+    
+}
+.card-content-2{
+    margin-left: 5rem;
+    margin-right: 5rem;
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:row-reverse;
+    
+    font-weight: 400;
+    
+    padding: 50px;
+    text-align:justify;
+}
+
+.card-content img{
+    padding: 25px;
+    max-width: 700px;
+}
+.card-content-2 img{
+    padding: 25px;
+    max-width: 700px;
+}
+.card .text p{
+    text-align: justify;
+}
+::-webkit-scrollbar {
+    width: 0%;
+}
+.iconsContainer{
+    
+    display: flex;
+    justify-items: center;
+    align-items: center;
+   background: black;
+   flex-direction: column;
+   color: white;
+   font-family: 'rajdhani', sans-serif;
+   font-size: 22pt;
+   
+   
+}
+.companyContainer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    text-align: center;
+    padding: 5rem;
+    
+}
+.companyContainer img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100px;
+    margin: 5px;
+    border-radius: 20px;
+}
+.companyContainer img:hover{
+    background-color: rgba(64, 64, 64, 0.503);
+    transition: 0.2s ease-in-out;
+}
+.text-content h1{
+    text-align: left;
+}
+.contactContainer{
+    font-family: 'rajdhani', sans-serif;
+    color: white;
+    font-weight: 500;
+    background-image: url(../../img/Computer.jpg);
+    background-size: 120%;
+    background-position:center;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    font-size: 16pt;
+    animation: fadeIn 1s;
+}
+.iconsContainer .descriptionContainer{
+    margin-right: 5rem;
+    margin-left: 5rem;
+    font-weight: 500;
+    position: initial;
+    border-radius: 25px;
+    margin-bottom: 5rem;
+    font-size: 22pt;
+}
+.iconsContainer .descriptionContainer .projectContainer h1{
+    margin-bottom: -4rem;
+}
+.iconsContainer .descriptionContainer .projectContainer img{
+    max-width: 900px;
+}
+
+@media screen and (max-width:800px){
+    #background{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 35vh;
+        background-image: url(../../img/code.png);
+       background-position: center;
+       background-size: 100%;
+       color: white;
+       font-size: 22pt;
+    }
+    #background:hover{
+        
+        transition: 0.5s ease-in-out;
+        background-repeat: no-repeat;
+    }
+    
+    .apresentation{
+        width: 30px;
+        height: 30px;
+        background-color:#F2D31F; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14pt;
+        cursor: pointer;
+        border-radius: 30px;
+        border: none;
+        
+    }
+    #icon-chevron{
+        size: 10px;
+    }
+    ::-webkit-scrollbar {
+        width: 0%;
+    }.card{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    
+        
+        
+    }
+    .card-content {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+       
+        
+        
+    }
+    .card-content img{
+        max-width: 300px;
+    }
+    .card-content h1{
+        text-align: center;
+    }
+    .card-content-2 h1{
+        text-align: center;
+    }
+    .card-content-2 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        
+       
+        
+        
+    }
+    .card-content-2 img{
+        max-width: 300px;
+    }
+    .companyContainer img{
+        width: 70px;
+        border-radius: 20px;
+        
+    }
+    .companyContainer h1{
+        font-size: 13pt;
+        
+    }
+    .companyContainer {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-left: 5rem;
+        margin-right: 5rem;
+        text-align: center;
+        padding: 5rem;
+        
+    }
+    .iconsContainer .descriptionContainer .projectContainer img{
+        max-width: 400px;
+    }
+}

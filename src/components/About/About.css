@@ -1,0 +1,63 @@
+.aboutContainer{
+    background: black;
+    font-family: 'rajdhani',sans-serif;
+    color: white;
+    font-size: 22pt;
+}
+.aboutContainer h1{
+    background-color: #a6a5ae;
+    margin: 0;
+    display: inline;
+}
+.aboutContainer p{
+    margin: 0;
+}
+.informationContent{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    padding: 5rem;
+}
+.picContainer{
+    height: 300px;
+    border-radius: 100px;
+    
+}
+.experienceContainer{
+    text-align: right;
+    margin-top: 5rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    
+}
+.informationContent img{
+    max-width: 300px;
+    border-radius: 100px;
+    transform: translate(45deg);
+    margin-left: 5rem;
+    
+}
+.experienceContainer div{
+    text-align: left;
+}
+.textContainer{
+    text-align: right;
+}
+.socialMidia{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+    padding: 5rem;
+}
+.socialMidia img{
+    max-width: 100px;
+    margin: 25px;
+}
+.socialMidia img:hover{
+    max-width: 115px;
+    transition: 0.2s ease-in-out;
+}
