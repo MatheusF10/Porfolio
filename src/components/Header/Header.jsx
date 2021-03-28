@@ -15,7 +15,7 @@ export default () => {
                     <li><a href="/"><Icon.Home></Icon.Home>&nbsp;Home</a></li>
                     <li><a href="/Projects"><Icon.Activity></Icon.Activity>&nbsp;Projects</a></li>
                     <li><a href="/About"><Icon.List></Icon.List>&nbsp;About-Us</a></li>
-                    <li><a href="/Contact"><Icon.Tag></Icon.Tag>&nbsp;Contact</a></li>
+                   
                     
                 </ul>
        
@@ -44,7 +44,7 @@ export default () => {
                 <li><a href="/"><Icon.Home spacing={10}></Icon.Home>&nbsp; Home</a></li>
                 <li><a href="/Projects"><Icon.Activity></Icon.Activity>&nbsp; Projects</a></li>
                 <li><a href="/About"><Icon.List></Icon.List>&nbsp; About-Us</a></li>
-                <li><a href="/Contact"><Icon.Tag></Icon.Tag>&nbsp; Contact</a></li>
+                
              </ul>
              
         </nav>
