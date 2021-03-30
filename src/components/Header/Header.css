@@ -7,7 +7,6 @@
     height: 70px;
     position: sticky;
     top: 0;
-    width: 100%;
     box-shadow: #000000b8 0px 0px 5px;
     font-family: 'rajdhani', sans-serif;
     border-bottom: #F2D31F solid 2px;
@@ -35,8 +34,14 @@
     margin-left: 5rem;
     cursor: pointer;
 }
-.logo:hover{
-    font-size: 13pt;
+.link{
+    color: white;
+    text-decoration: none;
+
+}
+
+.logo .link:hover{
+    
     transition: 0.2s ease-in-out;
     color: #F2D31F;
     
@@ -44,7 +49,7 @@
 .header .itens li{
     margin-right: 20px;
 }
-.header .itens  li a{
+.header .itens  li .link{
     color: white;
     text-decoration: none;
     display: flex;
@@ -67,102 +72,44 @@
 
 @media screen and (max-width: 800px) and (min-width: 300px){
     .header .itens{
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+    .header .itens li .link{
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        font-size: 8pt;
+        margin: 0;
+        padding: 0;
+    }
+    .icon{
         display: none;
+    }
+    .header .itens li{
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .logo{
         font-family: 'Nunito', sans-serif;
         font-size: 8pt;
+        margin-left: 0;
     }
-    .logo:hover{
-        font-size: 9pt;
+    .logo .link:hover{
         transition: 0.2s ease-in-out;
         color: #F2D31F;
         
     }
-    #checkbox-menu{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        background-color: white;
+    .logo{
+        font-size: 0.5rem;
     }
-     #checkbox-menu{
-        position: absolute;
-        opacity: 0;
-    }
-    label{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        height: 22px;
-        width: 30px;
-        padding: 20px;
-        flex-direction: column;
-    }
-    label span{
-        display: flex;
-        height: 2px;
-        width: 30px;
-        background-color: white;
-        transition: 0.25s ease-in-out;
-    }
-    #checkbox-menu:hover + label span:nth-child(2){
-        background-color:#F2D31F ;
-        margin-left: 5px;
-    }
-    #checkbox-menu:checked + label span:nth-child(1){
-        transform: rotate(45deg);
-        margin-top: 11px;
-        
-        
-       
-    }
-    #checkbox-menu:checked + label span:nth-child(2){
-        display: none;
-    }
-    #checkbox-menu:checked + label span:nth-child(3){
-        transform: rotate(135deg);
-        margin-bottom: 10px;
-    }
-    #checkbox-menu:checked:hover + label span:nth-child(1){
-        background-color:#F2D31F ;
-        
-    }
-
-    .itens-responsive{
-        display: flex;
-        flex-direction: column;
-        height: 100vh;
-        width: 100%;
-        align-items: flex-start;
-        background-color: black;
-        list-style: none;
-        margin: 0;
-        position: fixed;
-       overflow: hidden;
-        
-        
-       
-        
-        
-    }
-    .itens-responsive li{
-        padding: 10px;
-    }
-    .itens-responsive li a{
-        color: white;
-        text-decoration: none;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 20pt;
-    }
-    .itens-responsive li a:hover{
-        color: #F2D31F;
-        transition: 0.2s ease-in-out;
-    }
+   
     ::-webkit-scrollbar {
         width: 0%;
     }
+   
     
 }

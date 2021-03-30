@@ -74,7 +74,7 @@ export default function Main(){
                     
                 </div>
                     <h1>Projetos FullStack.</h1>
-                    <h2>React, Javascript, Wordpress, Sass, <br></br>mongoDB, Node.js, HTML5, CSS3</h2>
+                    <h1>React, Javascript, Wordpress, Sass, <br></br>mongoDB, Node.js, HTML5, CSS3</h1>
                     <p>Uso de Frameworks da atualidade, Construções de site em Wordpress <br></br>HTML, CSS, e javascript utilizando <br></br>frameworks para criação de aplicações web e web-sites.</p>
                     <div className="projectContainer">
                         <h1>My Finance! Primeiro Projeto FullStack.</h1>

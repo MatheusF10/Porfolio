@@ -3,20 +3,19 @@ import { Link } from 'react-router-dom'
 import * as Icon from 'react-feather'
 import './About.css'
 import pic from '../../img/Me.jpg'
-import finance from '../../img/Projects/MyFinance.png'
 import whatsapp from '../../img/Icons/whatsapp.png'
 import linkedin from '../../img/Icons/linkedin.png'
 import face from '../../img/Icons/face.png'
 
 export default function About(){
-    const date = new Date
+    const date = new Date()
     const year = date.getFullYear() - 2019
     return(
         <>
         <div id="background">
         <div className="content">
             <h1>About-Us</h1>  
-            <div className="apresentation"><Link to="/Projects"><Icon.ChevronRight color='black' size={25}></Icon.ChevronRight></Link></div>
+            <div className="apresentation"><Link to="/"><Icon.ChevronRight color='black' size={25}></Icon.ChevronRight></Link></div>
         </div>
     </div>
     <div className="color-bar"><h1>Look more about me!</h1></div>

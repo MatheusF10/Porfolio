@@ -1,10 +1,24 @@
+@keyframes  fadeInShow {
+   from {margin-top: 15rem}
+   to {margin-top: 0rem}
+}
+@keyframes fadeIn{
+    from {color: black;}
+    to {color: white;}
+    from{background-color: black;}
+    to{background-color: #a6a5ae;}
+}
+
+
 .aboutContainer{
+    animation: fadeInShow 1s ease-in-out;
     background: black;
     font-family: 'rajdhani',sans-serif;
     color: white;
     font-size: 22pt;
 }
 .aboutContainer h1{
+    animation: fadeIn 1s ease;
     background-color: #a6a5ae;
     margin: 0;
     display: inline;
@@ -13,8 +27,8 @@
     margin: 0;
 }
 .informationContent{
+    
     display: flex;
-    align-items: flex-start;
     justify-content: center;
     text-align: left;
     margin-left: 5rem;
@@ -60,4 +74,27 @@
 .socialMidia img:hover{
     max-width: 115px;
     transition: 0.2s ease-in-out;
+}
+@media screen and (max-width: 800px) {
+    .aboutContainer{
+        font-size: 16pt;
+    }
+    .informationContent img{
+        margin-bottom: 5rem;
+        margin-left: 0;
+        max-width: 200px;
+    }
+    .informationContent{
+        padding: 0;
+       flex-direction: column;
+       margin-bottom: 5rem;
+       
+    }
+    .socialMidia img{
+        max-width: 60px;
+    }
+    .socialMidia img:hover{
+        max-width: 70px;
+        
+    }
 }

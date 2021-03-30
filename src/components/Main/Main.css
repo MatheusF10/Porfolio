@@ -1,3 +1,14 @@
+@keyframes  fadeInShow {
+    from {margin-top: 15rem}
+    to {margin-top: 0rem}
+ }
+ @keyframes fadeIn{
+     from {color: black;}
+     to {color: white;}
+     from{background-color: black;}
+     to{background-color: #a6a5ae;}
+ }
+
 #background{
     display: flex;
     align-items: center;
@@ -15,6 +26,7 @@
     
 }
 .content{
+    animation: fadeInShow 1s ease-in-out;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -87,10 +99,14 @@
     
     
 }
+.card-content h1{
+    text-align: center;
+}
 .card p{
     font-weight: 600;
 }
 .card-content{
+    animation: fadeInShow 1s ease-in-out;
     margin-left: 5rem;
     margin-right: 5rem;
     background: black;
@@ -102,7 +118,6 @@
     
     font-weight: 400;
     
-    padding: 50px;
     text-align:justify;
 
     
@@ -147,7 +162,7 @@
    flex-direction: column;
    color: white;
    font-family: 'rajdhani', sans-serif;
-   font-size: 22pt;
+  
    
    
 }
@@ -159,7 +174,6 @@
     margin-left: 5rem;
     margin-right: 5rem;
     text-align: center;
-    padding: 5rem;
     
 }
 .companyContainer img{
@@ -190,19 +204,20 @@
     animation: fadeIn 1s;
 }
 .iconsContainer .descriptionContainer{
-    margin-right: 5rem;
-    margin-left: 5rem;
-    font-weight: 500;
-    position: initial;
-    border-radius: 25px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    background: black;
+    font-family: 'rajdhani', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
     margin-bottom: 5rem;
-    font-size: 22pt;
 }
-.iconsContainer .descriptionContainer .projectContainer h1{
-    margin-bottom: -4rem;
-}
+
 .iconsContainer .descriptionContainer .projectContainer img{
-    max-width: 900px;
+    max-width: 700px;
+    
 }
 
 @media screen and (max-width:800px){
@@ -216,6 +231,7 @@
        background-size: 100%;
        color: white;
        font-size: 22pt;
+       background-repeat: no-repeat;
     }
     #background:hover{
         
@@ -251,6 +267,7 @@
         
     }
     .card-content {
+        padding: 0;
         display: flex;
         flex-direction: column;
         text-align: center;
@@ -268,6 +285,7 @@
         text-align: center;
     }
     .card-content-2 {
+        padding: 0;
         display: flex;
         flex-direction: column;
         text-align: center;
@@ -300,6 +318,20 @@
         
     }
     .iconsContainer .descriptionContainer .projectContainer img{
-        max-width: 400px;
+        max-width: 300px;
+        
+    }
+    .iconsContainer{
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .companyContainer{
+        padding: 0;
+    }
+    
+    .descriptionContainer{
+        padding: 0;
     }
 }
